@@ -1,5 +1,5 @@
 const express = require('express');
-const pasth = require("path");
+const path = require("path");
 const bcrypt = require("bcrypt");
 const collection = require("./config");
 
@@ -19,11 +19,11 @@ app.set('view engine', 'ejs');
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-    res.render("Login");
+    res.render("../views/login");
 });
 
 app.get("/signup",(req, res) => {
-    res.render("signup");
+    res.render("../views/signup");
 });
 
 
